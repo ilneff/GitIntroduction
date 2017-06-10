@@ -3,7 +3,7 @@ from pyWords import words as MyDictionary
 from time import clock
 
 Version = '0.0'
-
+a=1
 def Find_Min_Edit_Distance_Word(given_word):
 	Min_Edit_Dist = len(given_word)
 	suggested_word = given_word
