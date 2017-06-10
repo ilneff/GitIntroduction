@@ -2,6 +2,8 @@ import Levenshtein as LV
 from pyWords import words as MyDictionary
 from time import clock
 
+Version = '0.0'
+
 def Find_Min_Edit_Distance_Word(given_word):
 	Min_Edit_Dist = len(given_word)
 	suggested_word = given_word
@@ -20,6 +22,7 @@ def main():
 	
 	Exit_Program = False
         Start_Time = 0
+
 	try:
 		while not(Exit_Program):
 	
@@ -37,7 +40,8 @@ def main():
 					suggested_sentence = suggested_sentence + Find_Min_Edit_Distance_Word(word) + ' '
 
 				suggested_sentence = suggested_sentence[:-1] + punct
-                                print 'I found this in ' + `clock() - Start_Time` + ' seconds'
+
+        print 'I found this in ' + `clock() - Start_Time` + ' seconds'
 				print 'Is this what you meant to say?'
 				confirmation = raw_input(suggested_sentence + '\n(Y/N): ')
                                 
@@ -55,8 +59,6 @@ def main():
 
 	print '\nSee you next time!\n'
 
-
-Version = '0'
 print 'Version: ' + Version + 'of ...'
 print 'No one showed up'
 
