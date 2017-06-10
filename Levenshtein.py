@@ -3,7 +3,6 @@ def Edit_Distance(word_1, word_2):
 	i = 0
 	j = 0
 	Edit_Distance_Matrix = []
-	print 'I\'m a mischeivous bug! Come find me!'
 	while i < len(word_1) + 1:
 		Edit_Distance_Matrix.append([i])
 		j=1
