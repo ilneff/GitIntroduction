@@ -2,6 +2,8 @@ import Levenshtein as LV
 from pyWords import words as MyDictionary
 from time import clock
 
+Version = '0.0'
+
 def Find_Min_Edit_Distance_Word(given_word):
 	Min_Edit_Dist = len(given_word)
 	suggested_word = given_word
@@ -58,5 +60,7 @@ def main():
 
 	print '\nSee you next time!\n'
 
+
+print 'This is version ' + Version + ' of this helper.\n\n'
 
 main()
