@@ -22,7 +22,7 @@ def main():
 	
 	Exit_Program = False
         Start_Time = 0
-        
+
 	try:
 		while not(Exit_Program):
 	
@@ -41,13 +41,12 @@ def main():
 
 				suggested_sentence = suggested_sentence[:-1] + punct
 
-                                print 'I found this answer in ' + `clock() - Start_Time` + ' seconds\n\n'
-                                
+        print 'I found this in ' + `clock() - Start_Time` + ' seconds'
 				print 'Is this what you meant to say?'
 				confirmation = raw_input(suggested_sentence + '\n(Y/N): ')
-
-
-    				if confirmation.upper() == 'Y':
+                                
+                                
+				if confirmation.upper() == 'Y':
 					print 'Yay! I\'m happy I could help :)'
 				else:
 					print 'Shoot :( Maybe next time.'
@@ -60,7 +59,7 @@ def main():
 
 	print '\nSee you next time!\n'
 
-
-print 'This is version ' + Version + ' of this helper.\n\n'
+print 'Version: ' + Version + 'of ...'
+print 'No one showed up'
 
 main()
