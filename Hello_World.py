@@ -41,7 +41,7 @@ def main():
 
 				suggested_sentence = suggested_sentence[:-1] + punct
 
-        print 'I found this in ' + `clock() - Start_Time` + ' seconds'
+                                print 'I found this in ' + `clock() - Start_Time` + ' seconds'
 				print 'Is this what you meant to say?'
 				confirmation = raw_input(suggested_sentence + '\n(Y/N): ')
                                 
