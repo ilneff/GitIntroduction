@@ -58,6 +58,6 @@ def main():
 
 Version = '0'
 print 'Version: ' + Version + 'of ...'
-
+print 'No one showed up'
 
 main()
