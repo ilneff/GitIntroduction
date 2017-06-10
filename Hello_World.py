@@ -56,5 +56,8 @@ def main():
 	print '\nSee you next time!\n'
 
 
+Version = '0'
+print 'Version: ' + Version + 'of ...'
+
 
 main()
